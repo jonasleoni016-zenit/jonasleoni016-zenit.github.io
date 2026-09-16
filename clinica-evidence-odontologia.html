@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Clínica Evidence Odontologia — Ribeirao Preto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --tinta:#0d1b2a;
+    --tinta-suave:#42566b;
+    --ouro:#c8a24a;
+    --ouro-claro:#e6d5ad;
+    --creme:#faf7f2;
+    --branco:#ffffff;
+    --verde:#1faa59;
+    --borda:rgba(13,27,42,.10);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,sans-serif;color:var(--tinta);background:var(--branco);line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:-.01em}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+
+  .faixa-proposta{background:#0d1b2a;color:#cbd6e2;font-size:13px;padding:10px 24px;text-align:center}
+  .faixa-proposta strong{color:#fff}
+  .faixa-proposta span{color:var(--ouro)}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid var(--borda)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .marca{display:flex;align-items:center;gap:12px}
+  .marca-sigla{width:42px;height:42px;border-radius:11px;background:linear-gradient(140deg,#0d1b2a,#24455f);color:var(--ouro-claro);display:grid;place-items:center;font-family:'Fraunces',serif;font-size:19px;font-weight:700}
+  .marca-nome{font-family:'Fraunces',serif;font-size:19px;font-weight:600;line-height:1.1}
+  .marca-sub{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--tinta-suave)}
+  .menu{display:flex;gap:32px;font-size:14.5px;font-weight:500;color:var(--tinta-suave)}
+  .menu a:hover{color:var(--tinta)}
+  @media(max-width:900px){.menu{display:none}}
+
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--verde);color:#fff;font-weight:600;font-size:15px;padding:13px 24px;border-radius:999px;box-shadow:0 8px 22px rgba(31,170,89,.28);transition:transform .15s ease, box-shadow .15s ease}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(31,170,89,.34)}
+  .btn-escuro{background:var(--tinta);box-shadow:0 8px 22px rgba(13,27,42,.22)}
+  .btn-escuro:hover{box-shadow:0 12px 28px rgba(13,27,42,.28)}
+  .btn svg{width:18px;height:18px;fill:currentColor}
+
+  .hero{background:radial-gradient(1000px 520px at 12% -10%, #ffffff 0%, rgba(255,255,255,0) 62%),linear-gradient(160deg,#f7f3ec 0%,#eef2f6 100%);padding:84px 0 92px;border-bottom:1px solid var(--borda)}
+  .hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:64px;align-items:center}
+  @media(max-width:960px){.hero-grid{grid-template-columns:1fr;gap:44px}.hero{padding:56px 0 64px}}
+
+  .selo{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--borda);padding:8px 16px;border-radius:999px;font-size:13px;font-weight:600;color:var(--tinta-suave);margin-bottom:26px;box-shadow:0 2px 10px rgba(13,27,42,.05)}
+  .selo b{color:var(--tinta)}
+  .estrelas{color:#f0a500;letter-spacing:1px}
+
+  h1{font-size:clamp(34px,4.9vw,58px);margin-bottom:22px}
+  h1 em{font-style:normal;color:var(--ouro);position:relative;white-space:nowrap}
+  h1 em:after{content:"";position:absolute;left:0;right:0;bottom:4px;height:9px;background:#c8a24a33;z-index:-1;border-radius:3px}
+  .lead{font-size:18.5px;color:var(--tinta-suave);max-width:520px;margin-bottom:32px}
+  .cta-linha{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .cta-nota{font-size:13.5px;color:var(--tinta-suave);margin-top:16px}
+
+  .cartao{background:#fff;border-radius:22px;padding:30px;border:1px solid var(--borda);box-shadow:0 30px 60px -28px rgba(13,27,42,.35)}
+  .cartao h3{font-size:21px;margin-bottom:6px}
+  .cartao p.sub{font-size:14px;color:var(--tinta-suave);margin-bottom:22px}
+  .campo{margin-bottom:14px}
+  .campo label{display:block;font-size:12.5px;font-weight:600;color:var(--tinta-suave);margin-bottom:6px}
+  .campo input,.campo select{width:100%;padding:13px 14px;border:1px solid var(--borda);border-radius:11px;font-family:inherit;font-size:15px;background:var(--creme);color:var(--tinta)}
+  .campo input:focus,.campo select:focus{outline:2px solid rgba(200,162,74,.45);border-color:transparent}
+  .cartao .btn{width:100%;justify-content:center;margin-top:8px}
+  .cartao .rodape{display:flex;align-items:center;gap:8px;justify-content:center;font-size:12.5px;color:var(--tinta-suave);margin-top:16px}
+  .ponto-verde{width:8px;height:8px;border-radius:50%;background:var(--verde);box-shadow:0 0 0 4px rgba(31,170,89,.16)}
+
+  .prova{background:var(--tinta);color:#e6edf4;padding:38px 0}
+  .prova-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+  .prova-num{font-family:'Fraunces',serif;font-size:34px;color:var(--ouro-claro);line-height:1}
+  .prova-txt{font-size:13px;color:#9fb1c4;margin-top:8px}
+  @media(max-width:760px){.prova-grid{grid-template-columns:repeat(2,1fr);gap:28px}}
+
+  section{padding:88px 0}
+  @media(max-width:760px){section{padding:60px 0}}
+  .titulo{text-align:center;max-width:640px;margin:0 auto 52px}
+  .olho{font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ouro);margin-bottom:14px}
+  .titulo h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:14px}
+  .titulo p{color:var(--tinta-suave);font-size:17px}
+
+  .servicos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media(max-width:900px){.servicos{grid-template-columns:1fr 1fr}}
+  @media(max-width:600px){.servicos{grid-template-columns:1fr}}
+  .servico{background:var(--creme);border:1px solid var(--borda);border-radius:18px;padding:30px 26px;transition:.2s ease}
+  .servico:hover{transform:translateY(-4px);box-shadow:0 18px 36px -22px rgba(13,27,42,.4);background:#fff}
+  .icone{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(140deg,#0d1b2a,#2b506d);color:var(--ouro-claro);font-size:20px;margin-bottom:18px}
+  .servico h3{font-size:19px;margin-bottom:9px}
+  .servico p{font-size:14.8px;color:var(--tinta-suave)}
+
+  .depos{background:var(--creme);border-top:1px solid var(--borda);border-bottom:1px solid var(--borda)}
+  .depo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media(max-width:900px){.depo-grid{grid-template-columns:1fr}}
+  .depo{background:#fff;border:1px solid var(--borda);border-radius:18px;padding:28px}
+  .depo .estrelas{font-size:15px;margin-bottom:12px;display:block}
+  .depo p{font-size:15.4px;color:var(--tinta-suave);margin-bottom:20px}
+  .depo .autor{display:flex;align-items:center;gap:12px}
+  .avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(140deg,#c8a24a,#8f6f28);color:#fff;display:grid;place-items:center;font-weight:600;font-size:15px}
+  .autor b{font-size:14.5px;display:block}
+  .autor span{font-size:12.5px;color:var(--tinta-suave)}
+
+  .local-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  @media(max-width:900px){.local-grid{grid-template-columns:1fr;gap:36px}}
+  .local h2{font-size:clamp(26px,3.2vw,38px);margin-bottom:18px}
+  .info{display:flex;gap:14px;margin-bottom:18px;align-items:flex-start}
+  .info .ic{width:38px;height:38px;border-radius:11px;background:var(--creme);border:1px solid var(--borda);display:grid;place-items:center;flex-shrink:0;font-size:16px}
+  .info b{display:block;font-size:14.5px}
+  .info span{font-size:14.5px;color:var(--tinta-suave)}
+  .mapa{height:340px;border-radius:20px;border:1px solid var(--borda);background:linear-gradient(135deg,rgba(13,27,42,.06),rgba(200,162,74,.10)),repeating-linear-gradient(0deg,#eef2f6 0 38px,#e3eaf1 38px 40px),repeating-linear-gradient(90deg,#eef2f6 0 58px,#e3eaf1 58px 60px);display:grid;place-items:center;position:relative;overflow:hidden}
+  .pin{background:#fff;border-radius:14px;padding:14px 20px;text-align:center;box-shadow:0 14px 30px -14px rgba(13,27,42,.5);border:1px solid var(--borda)}
+  .pin b{font-size:15px;display:block}
+  .pin span{font-size:12.5px;color:var(--tinta-suave)}
+
+  .final{background:linear-gradient(150deg,#0d1b2a 0%,#1b3852 100%);color:#fff;text-align:center}
+  .final h2{font-size:clamp(28px,3.6vw,42px);margin-bottom:16px;color:#fff}
+  .final p{color:#a9bbcd;font-size:17.5px;max-width:520px;margin:0 auto 32px}
+
+  footer{background:#08131e;color:#7c90a4;padding:40px 0;font-size:13.5px}
+  .foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+
+  .flutua{position:fixed;right:22px;bottom:22px;z-index:60;background:var(--verde);color:#fff;border-radius:999px;padding:15px 22px;font-weight:600;font-size:15px;display:inline-flex;align-items:center;gap:10px;box-shadow:0 14px 34px rgba(31,170,89,.4)}
+  .flutua svg{width:20px;height:20px;fill:#fff}
+  @media(max-width:600px){.flutua{right:14px;bottom:14px;padding:14px 18px;font-size:14px}}
+</style>
+</head>
+<body>
+
+<div class="faixa-proposta">
+  <strong>Proposta visual</strong> — página criada por <strong>Jonas Leoni</strong> para Clínica Evidence Odontologia.
+  <span>Não é o site oficial.</span>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <div class="marca">
+      <div class="marca-sigla">E</div>
+      <div>
+        <div class="marca-nome">Evidence Odontologia</div>
+        <div class="marca-sub">Odontologia</div>
+      </div>
+    </div>
+    <nav class="menu">
+      <a href="#servicos">Tratamentos</a>
+      <a href="#clientes">Pacientes</a>
+      <a href="#local">Onde estamos</a>
+    </nav>
+    <a class="btn" href="https://wa.me/5516992470522"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3a3 3 0 0 0-1 2.3 5.4 5.4 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c2.2.8 2.2.6 2.6.5a2.7 2.7 0 0 0 1.8-1.2c.2-.4.2-.9.1-1z"/></svg> Agendar avaliação</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="selo">
+        <span class="estrelas">★★★★★</span>
+        <b>5</b> no Google &nbsp;·&nbsp; 473 avaliações
+      </div>
+      <h1>O sorriso que você adia<br>há anos cabe em uma <em>consulta</em>.</h1>
+      <p class="lead">Avaliação completa com raio-X digital, plano de tratamento na hora e o valor fechado antes de você começar. Sem surpresa no meio do caminho.</p>
+      <div class="cta-linha">
+        <a class="btn" href="https://wa.me/5516992470522"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3a3 3 0 0 0-1 2.3 5.4 5.4 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c2.2.8 2.2.6 2.6.5a2.7 2.7 0 0 0 1.8-1.2c.2-.4.2-.9.1-1z"/></svg> Falar no WhatsApp</a>
+        <a class="btn btn-escuro" href="#servicos">Ver tratamentos</a>
+      </div>
+      <p class="cta-nota">Av. Independência, 1890 · Alto da Boa Vista · Ribeirão Preto - SP · 14025-393 · (16) 99247-0522</p>
+    </div>
+
+    <div class="cartao" id="contato">
+      <h3>Agende sua avaliação</h3>
+      <p class="sub">Retornamos em até 10 minutos no horário comercial.</p>
+      <div class="campo"><label>Seu nome</label><input type="text" placeholder="Como podemos te chamar?"></div>
+      <div class="campo"><label>WhatsApp</label><input type="tel" placeholder="(16) 9 0000-0000"></div>
+      <div class="campo"><label>O que você procura?</label><select><option>Implante dentário</option><option>Lentes de contato / facetas</option><option>Aparelho e alinhadores</option><option>Clareamento</option><option>Limpeza e prevenção</option><option>Ainda não sei, quero avaliar</option></select></div>
+      <a class="btn" href="https://wa.me/5516992470522">Quero minha avaliação</a>
+      <div class="rodape"><span class="ponto-verde"></span> 3 horários livres esta semana</div>
+    </div>
+  </div>
+</div>
+
+<div class="prova">
+  <div class="wrap prova-grid">
+    <div><div class="prova-num">5</div><div class="prova-txt">Nota no Google</div></div>
+    <div><div class="prova-num">473</div><div class="prova-txt">Avaliações reais</div></div>
+    <div><div class="prova-num">12x</div><div class="prova-txt">Parcelamento sem juros</div></div>
+    <div><div class="prova-num">24h</div><div class="prova-txt">Retorno pós-procedimento</div></div>
+  </div>
+</div>
+
+<section id="servicos">
+  <div class="wrap">
+    <div class="titulo">
+      <div class="olho">Tratamentos</div>
+      <h2>Tudo em um lugar só, sem encaminhar você pra fora</h2>
+      <p>Especialista em cada área e diagnóstico feito dentro da própria clínica.</p>
+    </div>
+    <div class="servicos"><div class="servico"><div class="icone">◈</div><h3>Implantes</h3><p>Do planejamento digital à coroa definitiva. Você sai da primeira consulta sabendo prazo e custo total.</p></div><div class="servico"><div class="icone">✦</div><h3>Lentes e facetas</h3><p>Simulação do resultado antes de qualquer desgaste. Se não gostar da prévia, não seguimos.</p></div><div class="servico"><div class="icone">◎</div><h3>Ortodontia</h3><p>Aparelho fixo, estético ou alinhador — a escolha depende da sua rotina, não da nossa agenda.</p></div><div class="servico"><div class="icone">✧</div><h3>Clareamento</h3><p>Protocolo de consultório ou supervisionado em casa, com controle de sensibilidade.</p></div><div class="servico"><div class="icone">✚</div><h3>Urgência</h3><p>Dor não espera encaixe. Atendimento prioritário para quadro agudo.</p></div><div class="servico"><div class="icone">◐</div><h3>Prevenção</h3><p>Limpeza e acompanhamento periódico pra você não voltar aqui por emergência.</p></div></div>
+  </div>
+</section>
+
+<section class="depos" id="clientes">
+  <div class="wrap">
+    <div class="titulo">
+      <div class="olho">Quem já passou por aqui</div>
+      <h2>473 avaliações, nota 5</h2>
+      <p>O que os pacientes escrevem sobre a clínica.</p>
+    </div>
+    <div class="depo-grid"><div class="depo"><span class="estrelas">★★★★★</span><p>“Fiz o implante que adiei por três anos com medo. Explicaram cada etapa, o preço não mudou no meio e o resultado ficou melhor do que eu esperava.”</p><div class="autor"><div class="avatar">M</div><div><b>Marcela R.</b><span>Paciente de implante</span></div></div></div><div class="depo"><span class="estrelas">★★★★★</span><p>“Cheguei com dor e fui atendida no mesmo dia. Atendimento humano de verdade, não aquela clínica que trata você como número.”</p><div class="autor"><div class="avatar">C</div><div><b>Carlos E.</b><span>Urgência odontológica</span></div></div></div><div class="depo"><span class="estrelas">★★★★★</span><p>“Fizeram a simulação das lentes antes e eu pude decidir com calma. Saí com o sorriso que eu mostrava em foto há anos.”</p><div class="autor"><div class="avatar">P</div><div><b>Patrícia L.</b><span>Lentes de contato</span></div></div></div></div>
+  </div>
+</section>
+
+<section class="local" id="local">
+  <div class="wrap local-grid">
+    <div>
+      <div class="olho">Onde estamos</div>
+      <h2>Fácil de chegar, com estacionamento por perto</h2>
+      <div class="info"><div class="ic">📍</div><div><b>Av. Independência, 1890</b><span>Alto da Boa Vista · Ribeirão Preto - SP · 14025-393</span></div></div>
+      <div class="info"><div class="ic">💬</div><div><b>(16) 99247-0522</b><span>WhatsApp e telefone · resposta no mesmo dia</span></div></div>
+      <div class="info"><div class="ic">🕐</div><div><b>Segunda a sexta, 8h às 19h</b><span>Sábado com agenda reduzida para avaliações</span></div></div>
+      <a class="btn" href="https://wa.me/5516992470522" style="margin-top:14px"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3a3 3 0 0 0-1 2.3 5.4 5.4 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c2.2.8 2.2.6 2.6.5a2.7 2.7 0 0 0 1.8-1.2c.2-.4.2-.9.1-1z"/></svg> Chamar no WhatsApp</a>
+    </div>
+    <div class="mapa"><div class="pin"><b>Evidence Odontologia</b><span>Av. Independência, 1890</span></div></div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Sua avaliação começa com uma mensagem</h2>
+    <p>Sem compromisso e sem cobrança pela consulta de avaliação. Você sai sabendo exatamente o que precisa e quanto custa.</p>
+    <a class="btn" href="https://wa.me/5516992470522"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3a3 3 0 0 0-1 2.3 5.4 5.4 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c2.2.8 2.2.6 2.6.5a2.7 2.7 0 0 0 1.8-1.2c.2-.4.2-.9.1-1z"/></svg> Falar agora</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>Clínica Evidence Odontologia · Av. Independência, 1890 · Alto da Boa Vista · Ribeirão Preto - SP · 14025-393</div>
+    <div>Proposta visual criada por Jonas Leoni · não é o site oficial</div>
+  </div>
+</footer>
+
+<a class="flutua" href="https://wa.me/5516992470522"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3a3 3 0 0 0-1 2.3 5.4 5.4 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c2.2.8 2.2.6 2.6.5a2.7 2.7 0 0 0 1.8-1.2c.2-.4.2-.9.1-1z"/></svg> WhatsApp</a>
+
+</body>
+</html>
